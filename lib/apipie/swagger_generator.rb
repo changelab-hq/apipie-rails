@@ -71,6 +71,7 @@ module Apipie
           },
           basePath: Apipie.api_base_url(version),
           consumes: [],
+          produces: ['application/json'],
           paths: {},
           definitions: {},
           schemes: Apipie.configuration.swagger_schemes,
