@@ -86,10 +86,8 @@ module Apipie
 
       if params_in_body?
         @swagger[:consumes] = ['application/json']
-        @swagger[:info][:title] += " (params in:body)"
       else
         @swagger[:consumes] = ['application/x-www-form-urlencoded', 'multipart/form-data']
-        @swagger[:info][:title] += " (params in:formData)"
       end
 
       @paths = @swagger[:paths]
